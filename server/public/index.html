@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angularjs.min.js"></script>
+    <script src="scripts/client.js"></script>
     <title>Angular Http</title>
 </head>
-<body>
+<body ng-app="ShellApp">
     <h1>Angular Http</h1>
+    <div ng-controller="ShellController as vm">
+        {{vm.number}}
+    </div>
 </body>
 </html>
